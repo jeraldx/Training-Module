@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Trainees</title>
+  <link rel="stylesheet" href="Team_Traines.css">
+</head>
+<body>
+
+  <h2>Team Trainees</h2>
+
+  <div class="card">
+    <h3>Venue Preference</h3>
+    <div class="form-group">
+      <!-- Dropdown for Venue Name -->
+      <select id="venueName">
+        <option value="" disabled selected>Select Venue Name</option>
+        <option value="Main Court">Main Court</option>
+        <option value="Training Gym">Training Gym</option>
+        <option value="Outdoor Court">Outdoor Court</option>
+        <option value="Mini Arena">Mini Arena</option>
+      </select>
+
+      <!-- Dropdown for Venue Building -->
+      <select id="venueBuilding">
+        <option value="" disabled selected>Select Venue Building</option>
+        <option value="Building A">Building A</option>
+        <option value="Building B">Building B</option>
+        <option value="Sports Complex">Sports Complex</option>
+        <option value="Annex Hall">Annex Hall</option>
+      </select>
+
+      <!-- Dropdown for Venue Room -->
+      <select id="venueRoom">
+        <option value="" disabled selected>Select Venue Room</option>
+        <option value="Room 101">Room 101</option>
+        <option value="Room 202">Room 202</option>
+        <option value="Room 305">Room 305</option>
+        <option value="Court 1">Court 1</option>
+        <option value="Court 2">Court 2</option>
+      </select>
+
+      <!-- Dropdown for Venue Description -->
+      <select id="venueDescription">
+        <option value="" disabled selected>Select Venue Description</option>
+        <option value="Indoor facility with seating">Indoor facility with seating</option>
+        <option value="Outdoor open court">Outdoor open court</option>
+        <option value="Training area with equipment">Training area with equipment</option>
+        <option value="Small practice space">Small practice space</option>
+      </select>
+
+      <label class="checkbox-container">
+        <input type="checkbox" id="isActive">
+        <span>Is Active</span>
+      </label>
+
+      <button class="btn" onclick="addVenue()">Add Venue</button>
+    </div>
+  </div>
+
+  <table id="venueTable">
+    <thead>
+      <tr>
+        <th>Venue Name</th>
+        <th>Venue Building</th>
+        <th>Venue Room</th>
+        <th>Venue Description</th>
+        <th>Is Active</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="Team_Traines.js"></script>
+</body>
+</html>

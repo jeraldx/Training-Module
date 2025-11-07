@@ -1,0 +1,150 @@
+/* ===== Global Styles ===== */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: 
+    linear-gradient(rgba(10, 35, 66, 0.55), rgba(10, 35, 66, 0.55)),
+    url('carabaw.png') no-repeat center bottom fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 40px;
+  color: #222;
+  background-size: contain;
+}
+
+/* ===== Page Container ===== */
+.container {
+  width: 100%;               /* Make it responsive */
+  max-width: 1700px;        /* Adjusted from 1200px to 1000px for tighter layout */
+  margin: 10px;        /* Centers the container and adds spacing from top */
+  padding: 10px;            /* Inner space around content */
+}
+
+/* ===== Page Title ===== */
+h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #0a2342;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+/* ===== Card (Form Section) ===== */
+.card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+  margin: -10pxs 0 30px 0;
+}
+
+.card h2 {
+  font-size: 20px;
+  color: #0a2342;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* ===== Form Layout ===== */
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.form-row input[type="text"],
+.form-row select {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border-color 0.3s ease;
+}
+
+.form-row input:focus {
+  border-color: #0a2342;
+  outline: none;
+}
+
+.form-row label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* ===== Checkbox + Button Section ===== */
+.form-row .checkbox {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+button {
+  padding: 10px 16px;
+  background-color: #0a2342;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffcc00;
+  color: #0a2342;
+  transform: scale(1.05);
+}
+
+/* ===== Table Section ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+}
+
+th {
+  background-color: #f8f8f8;
+  color: #0a2342;
+  font-weight: 600;
+}
+
+tr:hover {
+  background-color: rgba(255, 204, 0, 0.1);
+}
+
+/* ===== Table Buttons ===== */
+.action-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.action-btn.enable {
+  background-color: #28a745;
+  color: white;
+}
+
+.action-btn.disable {
+  background-color: #d7263d;
+  color: white;
+}
+
+.action-btn:hover {
+  opacity: 0.8;
+}

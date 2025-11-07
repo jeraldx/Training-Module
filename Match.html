@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Match Management Module</title>
+  <link rel="stylesheet" href="Match.css" />
+</head>
+<body>
+  <div class="container">
+
+    <h1>Match Management</h1>
+
+    <h2>Match Schedule</h2>
+
+    <div class="form-container">
+      <input type="number" id="game_no" placeholder="Game No">
+      <input type="date" id="sked_date">
+      <input type="time" id="sked_time">
+      <input type="text" id="venue_id" placeholder="Venue ID">
+      <input type="text" id="match_umpire_id" placeholder="Umpire ID">
+      <input type="text" id="match_sports_managers_id" placeholder="Manager ID">
+
+      <select id="match_type">
+        <option value="">Type</option>
+        <option value="EL">EL</option>
+        <option value="QF">QF</option>
+        <option value="SF">SF</option>
+        <option value="F">F</option>
+      </select>
+
+      <button id="addMatch">Add Match</button>
+    </div>
+
+    <table id="matchTable">
+      <thead>
+        <tr>
+          <th>Game No</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Venue ID</th>
+          <th>Umpire ID</th>
+          <th>Manager ID</th>
+          <th>Type</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+    
+        <!-- Rows will appear here-->
+
+      </tbody>
+    </table>
+  </div>
+
+  <script src="Match.js"></script>
+</body>
+</html>

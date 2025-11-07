@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Training Activity</title>
+  <link rel="stylesheet" href="Try.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Training Activity</h1>
+
+    <div class="card">
+      <h3>Activity Preference</h3>
+      <div class="input-group">
+        <input type="text" id="activity_id" placeholder="Activity ID">
+        <input type="text" id="activity_name" placeholder="Activity Name">
+        <input type="text" id="sports_id" placeholder="Sports ID">
+        <input type="text" id="duration" placeholder="Duration (mins)">
+        <input type="text" id="repetition" placeholder="Repetition">
+        <label class="checkbox-label">
+          <input type="checkbox" id="is_active"> Is Active
+        </label>
+        <button id="addBtn">Add Activity</button>
+      </div>
+    </div>
+
+    <table id="activityTable">
+      <thead>
+        <tr>
+          <th>Activity ID</th>
+          <th>Activity Name</th>
+          <th>Sports ID</th>
+          <th>Duration</th>
+          <th>Repetition</th>
+          <th>Is Active</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script src="Try.js"></script>
+</body>
+</html>

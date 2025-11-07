@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Train Preference</title>
+  <link rel="stylesheet" href="Train_pref.css" />
+</head>
+<body>
+    <h1>Training Preference</h1>
+  <div class="container">
+
+    <div class="card">
+      <h2>Train Preference</h2>
+
+      <div class="form-row">
+        <input type="text" id="prefId" placeholder="Preference ID" />
+        <input type="text" id="personId" placeholder="Person ID" />
+        <input type="text" id="activityId" placeholder="Activity ID" />
+        <input type="number" id="rating" placeholder="Rating" />
+        <input type="date" id="dateEval" />
+        <input type="text" id="teamId" placeholder="Team ID" />
+        <button id="addPreference" class="addPreference">Add Preference</button>
+      </div>
+      
+    </div>
+    <table id="preferenceTable">
+      <thead>
+        <tr>
+          <th>Preference ID</th>
+          <th>Person ID</th>
+          <th>Activity ID</th>
+          <th>Rating</th>
+          <th>Date Evaluation</th>
+          <th>Team ID</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Added data will appear here -->
+      </tbody>
+    </table>
+
+    <!-- Data Summary Section -->
+    
+  </div>
+
+  <script src="Train_pref.js"></script>
+</body>
+</html>

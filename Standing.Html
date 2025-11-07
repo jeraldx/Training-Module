@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Standing Management</title>
+  <link rel="stylesheet" href="Standing.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Team Standing Management</h1>
+
+    <h2>Team Standings</h2>
+
+    <!-- Input Form -->
+    <div class="form-container">
+      <input type="text" id="tour_id" placeholder="Tournament ID">
+      <input type="text" id="sports_id" placeholder="Sports ID">
+      <input type="text" id="team_id" placeholder="Team ID">
+      <input type="number" id="no_games_played" placeholder="Games Played">
+      <input type="number" id="no_wins" placeholder="Wins">
+      <input type="number" id="no_loss" placeholder="Loss">
+      <input type="number" id="no_draw" placeholder="Draw">
+      <input type="number" id="no_gold" placeholder="Gold">
+      <input type="number" id="no_silver" placeholder="Silver">
+      <input type="number" id="no_bronze" placeholder="Bronze">
+      <button id="addTeam">Add Record</button>
+    </div>
+
+    <!-- Table -->
+    <table id="teamTable">
+      <thead>
+        <tr>
+          <th>Tournament ID</th>
+          <th>Sports ID</th>
+          <th>Team ID</th>
+          <th>Games Played</th>
+          <th>Wins</th>
+          <th>Loss</th>
+          <th>Draw</th>
+          <th>Gold</th>
+          <th>Silver</th>
+          <th>Bronze</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- New rows appear here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="Standing.js"></script>
+</body>
+</html>
